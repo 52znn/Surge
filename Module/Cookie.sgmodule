@@ -1,0 +1,23 @@
+#!name=Cookie（自用）
+#!desc=最后更新于:2020-09-15 08:07:15
+#!system=ios
+
+[Script]
+
+# > 百度贴吧
+贴吧_获取cookie = type=http-request,pattern=https?:\/\/c\.tieba\.baidu\.com\/c\/s\/login,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/tieba/tieba_checkin.js
+
+# > 中国联通
+联通_获取cookie = type=http-request,pattern=^https?:\/\/m\.client\.10010\.com\/dailylottery\/static\/(integral|doubleball)\/firstpage,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/10010/unicom_checkin.js
+
+# > 滴滴出行
+滴滴出行_获取token = type=http-request,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/didichuxing/didi_checkin.js,pattern=^https?:\/\/api\.didialift\.com\/beatles\/userapi\/user\/user\/getuserinfo?.*city_id=(\d+).*token=([^&]*)
+滴滴出行_获取ticket = type=http-request,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/didichuxing/didi_checkin.js,pattern=^https?:\/\/as\.xiaojukeji\.com\/ep\/as\/toggles\?.*location_cityid=(\d+).*&ticket=([^&]*)
+滴滴出行_获取lid = type=http-request,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/didichuxing/didi_checkin.js,pattern=^https?:\/\/bosp-api\.xiaojukeji\.com\/bosp-api\/lottery\/info?.*lid=([^&]*)
+滴滴出行_获取ActivityId与ChannelId = type=http-request,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/didichuxing/didi_checkin.js,pattern=^https?:\/\/manhattan\.webapp\.xiaojukeji\.com\/marvel\/api\/manhattan\-signin\-task\/signIn\/execute
+
+# > 饿了么
+饿了么_获取cookie = type=http-request,pattern=^https?:\/\/h5\.ele\.me\/restapi\/svip_biz\/v1\/supervip\/query_mission_list\?longitude=([^&]*).*latitude=([^&]*),script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/eleme/eleme_daily.js
+
+[MITM]
+hostname = %APPEND% c.tieba.baidu.com,m.client.10010.com,api.didialift.com,bosp-api.xiaojukeji.com,as.xiaojukeji.com,manhattan.webapp.xiaojukeji.com,h5.ele.me
