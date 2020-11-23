@@ -5,7 +5,7 @@
 
 [Script]
 # > 滴滴出行
-滴滴出行_每日签到 = type=cron,timeout=120,cronexp=30 0 0 * * *,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/didichuxing/didi_checkin.js
+滴滴出行_每日签到 = type=cron,timeout=120,cronexp=30 0 0 * * *,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi_new.js,script-update-interval=0
 
 # > 京东
 京东 = type=cron,cronexp=0 5 0 * * *,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js,script-update-interval=0,wake-system=1
@@ -77,3 +77,9 @@ qq会员签到 = type=cron,cronexp=0 13 0 * * *,script-path=https://raw.githubus
 
 # > 中青看点极速版 (打卡)
 中青看点极速版 (打卡) = type=cron,cronexp=30 0 6 * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js,script-update-interval=0
+
+# > 京东金融领白条券
+京东金融领白条券 = type=cron,cronexp=0 9 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/jd/JD_BaiTiao.js,script-update-interval=0
+
+# > 中国电信 400 金豆兑换 2 元话费
+中国电信 400 金豆兑换 2 元话费 = type=cron,cronexp=0 10 */3 * *,script-path=https://raw.githubusercontent.com/elecV2/QuantumultX-Tools/master/dianx/dianx.js
