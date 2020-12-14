@@ -78,11 +78,5 @@ qq会员签到 = type=cron,cronexp=0 13 0 * * *,script-path=https://raw.githubus
 # > 中青看点极速版 (打卡)
 中青看点极速版 (打卡) = type=cron,cronexp=30 0 6 * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js,script-update-interval=0
 
-# > 京东金融领白条券
-京东金融领白条券 = type=cron,cronexp=0 9 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/jd/JD_BaiTiao.js,script-update-interval=0
-
-# > 京东点点券
-京东点点券 = type=cron,cronexp=10 0,20 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_necklace.js,script-update-interval=0
-
 # > 中国电信 400 金豆兑换 2 元话费
 中国电信 400 金豆兑换 2 元话费 = type=cron,cronexp=0 10 */3 * *,script-path=https://raw.githubusercontent.com/elecV2/QuantumultX-Tools/master/dianx/dianx.js
