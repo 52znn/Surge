@@ -1,0 +1,11 @@
+#!name=Unlock TikTok US
+#!desc=油管搜索：Happy白嫖
+#!system=ios
+
+[URL Rewrite]
+#tiktok解锁直播区域限制
+(?<=_region=)CN(?=&) KR 307
+(?<=&mcc_mnc=)4 2 307
+
+[MITM]
+hostname = %APPEND% *.tiktokv.com
