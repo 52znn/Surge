@@ -8,4 +8,4 @@
 (?<=&mcc_mnc=)4 2 307
 
 [MITM]
-hostname = %APPEND% *.tiktokv.com
+hostname = %APPEND% *.tiktokv.com, *.byteoversea.com
