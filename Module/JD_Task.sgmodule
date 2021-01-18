@@ -131,3 +131,6 @@ crazyJoy任务 = type=cron,cronexp=30 8 * * *,wake-system=1,timeout=20,script-pa
 
 # > 京东年货节
 京东年货节 = type=cron,cronexp=1 7 * * *,wake-system=1,timeout=300,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_nh.js,script-update-interval=0
+
+# > 京东炸年兽🧨
+京东炸年兽🧨 = type=cron,cronexp=0 8 * * *,wake-system=1,timeout=200,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_nian.js,script-update-interval=0
