@@ -58,6 +58,3 @@
 # > 3.多阅读几篇短文，随机获取阅读时长请求(至少1分钟左右，增加时长有关)
 # > 4.正常提现一次，获取提现请求(可选，AC无添加)
 中青看点极速版 = type=cron,cronexp=35 */15 */3 * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js,script-update-interval=0
-
-# > 中青看点极速版 (打卡)
-中青看点极速版 (打卡) = type=cron,cronexp=30 0 6 * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js,script-update-interval=0
