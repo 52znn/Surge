@@ -33,10 +33,3 @@
 
 # > 百度贴吧
 贴吧_每日签到 = type=cron,cronexp=0 14 0 * * *,timeout=60,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/tieba/tieba_checkin.js
-
-# > 中青看点极速版 (By @Macsuny)
-# > 1.打开极速版APP，进去我的"任务中心"，提示获取Cookie
-# > 2.打开一篇短文资讯，提示获取阅读请求
-# > 3.多阅读几篇短文，随机获取阅读时长请求(至少1分钟左右，增加时长有关)
-# > 4.正常提现一次，获取提现请求(可选，AC无添加)
-中青看点极速版 = type=cron,cronexp=35 */15 */3 * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js,script-update-interval=0
